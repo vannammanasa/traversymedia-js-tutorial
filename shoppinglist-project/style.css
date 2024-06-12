@@ -33,7 +33,10 @@ header h1{
   height:80px;
   width:60px;
 }
+.edit-mode{
+  color:#ccc;
 
+}
 .form-input{
   width:1005;
   font-size: 18px;
@@ -51,7 +54,7 @@ header h1{
   margin-bottom: 20px;
   padding:10px;
   border:none;
-  border-bottom: px solid #ccc;
+  border-bottom: 1px solid #ccc;
   background:transparent;
   outline: none;
 }
