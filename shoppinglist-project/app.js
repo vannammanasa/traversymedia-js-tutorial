@@ -143,7 +143,7 @@ function onClickItem(e) {
 
       //item.style.color = '#ccc'; //setting selected one to different color
     item.classList.add('edit-mode');
-    formBtn.innerHTML='<i class="fa-solid fa-pen"></i>Update Item';
+    formBtn.innerHTML='<i class="fa-solid fa-pen"></i> Update Item';
     formBtn.style.backgroundColor = '#228b22';
     inputItem.value=item.textContent;
 
@@ -164,11 +164,11 @@ function removeItemFromStorage(item){
   let itemsFromStorage = getItemsFromStorage();
 
   //filtering out items to be removed
-  itemsFromStorage = itemsFromStorage.filter((i)=>i!= item);
+  itemsFromStorage = itemsFromStorage.filter((i)=>i!== item);
 
   //resetting to local storage
 
-  localStorage.setItem('item',JSON.stringify(itemsFromStorage));
+  localStorage.setItem('items',JSON.stringify(itemsFromStorage));
 
 
 }
@@ -233,6 +233,8 @@ function checkUI() {
 
   formBtn.innerHTML = '<i class="fa-solid fa-plus"></i>Add Item';
   formBtn.style.backgroundColor = '#333';
+
+  isEditMode = false;
 }
 
 
