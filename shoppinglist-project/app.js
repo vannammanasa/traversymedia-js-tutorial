@@ -64,6 +64,8 @@ function onAddItemToDoM(item){
   li.appendChild(document.createTextNode(item));
 
   const button = createButton('remove-item btn-link text-red');
+  //button.innerHTML='<i class="fa-solid fa-pen-to-square"></i>';
+  button.innerHTML = '<i class="fa-solid fa-trash"></i>';
   li.appendChild(button); 
   itemList.appendChild(li);  //appending li to the DOM
 

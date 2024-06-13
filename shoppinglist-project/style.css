@@ -82,6 +82,7 @@ header h1{
   padding:0;
   cursor: pointer;
   border:none;
+  border-radius: 2px;
 }
 
 .btn-clear{
@@ -92,12 +93,13 @@ header h1{
   color:#333;
   padding:10px 20px;
   cursor: pointer;
+  border-radius: 4px;
 }
 .btn-clear:hover{
-  background-color: #f1f1f1;
+  background-color: #f3faa5;
 }
 .text-red{
-color:red;
+color:rgb(226, 106, 106);
 }
 
 .items{
